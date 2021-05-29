@@ -1,0 +1,10 @@
+include ./links
+include ../btn
+mixin menu(items)
+      ul.menu
+         each link,key in items
+            +links(key,link)
+            
+         .menu__auth
+            +btn('Login','#','')
+            +btn('Sign Up','#','')

@@ -1,0 +1,6 @@
+include ./submenu
+mixin links(title,subLinks)
+   li.menu__item
+      a.menu__link(href="#")= title
+         img(src=require('../../assets/img/icon-arrow-dark.svg'))
+      +submenu(subLinks)

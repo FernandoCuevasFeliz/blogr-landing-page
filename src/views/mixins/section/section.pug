@@ -1,0 +1,10 @@
+include ./section-article
+mixin section(title,image,contentSection,_class='')
+   section(class='section'+_class)
+      if(title)
+         h1(class='section'+_class+'__title')= title
+      div(class='section'+_class+'__container')
+         img(src!=image.src, alt!= image.alt, srcset!=image.srcset)   
+         .section__text
+            each value in contentSection
+               +section-article(value.title,value.paragraphs)
