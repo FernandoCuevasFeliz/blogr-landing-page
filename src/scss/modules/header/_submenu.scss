@@ -1,0 +1,22 @@
+.submenu {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  border-radius: px-to-measure(5px);
+
+  list-style: none;
+
+  font-size: px-to-measure(14px);
+
+  color: var(--on-gray);
+  background-color: var(--gray);
+
+  max-height: 0;
+  overflow: hidden;
+
+  .menu__link::after {
+    content: '';
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.section-state {
+  position: relative;
+
+  margin-top: px-to-measure(235px);
+  padding-top: px-to-measure(235px);
+  padding-bottom: px-to-measure(50px);
+  border-top-right-radius: px-to-measure(100px);
+  border-bottom-left-radius: px-to-measure(100px);
+
+  background-color: var(--dark-blue);
+  background-image: url('../assets/img/bg-pattern-circles.svg');
+  background-position: center -225px;
+  background-size: 600px;
+  background-repeat: no-repeat;
+
+  .section__subtitle {
+    color: var(--white);
+  }
+  .section__image {
+    position: absolute;
+    top: -200px;
+    left: auto;
+    transform: translateX(-50%);
+
+    margin: auto;
+  }
+
+  .section__paragraph {
+    color: var(--gray);
+  }
+}

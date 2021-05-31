@@ -1,0 +1,18 @@
+.section {
+  padding-left: px-to-measure(34px);
+  padding-right: px-to-measure(34px);
+  margin-bottom: px-to-measure(100px);
+
+  line-height: 26px;
+
+  &__subtitle {
+    font-size: 24px;
+  }
+
+  &__article {
+    margin-bottom: px-to-measure(50px);
+  }
+  &__image {
+    max-width: 375px;
+  }
+}

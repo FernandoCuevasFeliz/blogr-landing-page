@@ -3,6 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const LOADERS = require('./loaders');
 const PAGES = require('./pages');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -18,5 +19,11 @@ module.exports = {
   },
   module: { rules: LOADERS },
 
-  plugins: [new CleanWebpackPlugin(), ...PAGES],
+  plugins: [
+    new CleanWebpackPlugin(),
+    ...PAGES,
+    new MiniCssExtractPlugin({
+      filename: 'css/style.min.css',
+    }),
+  ],
 };

@@ -1,0 +1,27 @@
+:root {
+  // desktop colors
+  --primary-desktop: #ff525d;
+  --secondary-desktop: #ff7a85;
+
+  // mobile colors
+  --primary-mobile: #ff3d54;
+  --secondary-mobile: #ff8f70;
+
+  // common colors
+  --bg: #fafafa;
+  --on-bg: #616264;
+  --dark-blue: #3a3b59;
+  --on-dark-blue: #203e57;
+  --white: #ffffff;
+  --on-white: #203e57;
+  --gray: #efeff1;
+  --on-gray: #7a8c9d;
+  --black: #24242c;
+  --on-black: #9b9ba3;
+}
+$base: 16px;
+$breakPoints: (
+  mobile: 375px,
+  tablet: 768px,
+  desktop: 1200px,
+);

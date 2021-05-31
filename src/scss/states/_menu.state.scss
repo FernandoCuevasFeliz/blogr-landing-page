@@ -1,0 +1,12 @@
+.header {
+  .container-menu {
+    .menu--active {
+      transition: all 300ms ease-in-out;
+      transform: scale(1);
+    }
+    .btn--close {
+      transition: img 300ms ease-in-out;
+      content: url('../assets/img/icon-close.svg');
+    }
+  }
+}

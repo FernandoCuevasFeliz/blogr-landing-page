@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: px-to-measure(50px);
+  padding-bottom: px-to-measure(50px);
+  border-top-left-radius: px-to-measure(100px);
+
+  background-color: var(--black);
+
+  .link-logo {
+    display: block;
+
+    padding-top: px-to-measure(20px);
+    padding-bottom: px-to-measure(20px);
+  }
+
+  .menu__link {
+    display: inline-block;
+
+    margin-bottom: px-to-measure(20px);
+
+    color: var(--white);
+    font-weight: bold;
+    font-size: px-to-measure(20px, rem);
+  }
+  .menu__auth {
+    display: none;
+  }
+  .submenu .menu__link {
+    color: var(--gray);
+    font-weight: normal;
+    font-size: px-to-measure(16px, rem);
+  }
+}

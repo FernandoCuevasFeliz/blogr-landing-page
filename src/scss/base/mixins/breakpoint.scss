@@ -1,0 +1,8 @@
+@mixin breakpoint($device) {
+  @if map-has-key($device) {
+    @media screen and (min-width: #{map-get($breakpoint, $device)}) {
+    }
+  } @else {
+    @warn 'The breakpoint #{$device} is not exist';
+  }
+}

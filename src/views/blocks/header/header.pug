@@ -1,9 +1,11 @@
 include ../../mixins/btn 
 header.header
    include ./navbar
-   h1.header__title A modern publishing platform
-   p.header__paragraph Grow your audience and build your online brand
-   
-   +btn("Start for Free",'#','')
-   +btn("Learn More",'#','')
+   section.header__home
+      .header__text
+         h1.header__title A modern publishing platform
+         p.header__paragraph Grow your audience and build your online brand
+      .header__btns
+         +btn("Start for Free",'#','header__btn-white')
+         +btn("Learn More",'#','header__btn-red')
    

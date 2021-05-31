@@ -87,7 +87,7 @@ const loaders = [
     test: /\.(png|svg|jpg|jpeg|gif)$/i,
     type: 'asset',
     generator: {
-      filename: 'assets/img/[hash][ext][query]',
+      filename: 'assets/img/[name][ext][query]',
     },
   },
 

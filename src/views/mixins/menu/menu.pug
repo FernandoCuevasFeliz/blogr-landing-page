@@ -1,10 +1,10 @@
 include ./links
 include ../btn
-mixin menu(items)
-      ul.menu
+mixin menu(items,id)
+      ul(class="menu",id !=id)
          each link,key in items
             +links(key,link)
             
          .menu__auth
-            +btn('Login','#','')
-            +btn('Sign Up','#','')
+            +btn('Login','#','btn__link')
+            +btn('Sign Up','#','btn__gradient')

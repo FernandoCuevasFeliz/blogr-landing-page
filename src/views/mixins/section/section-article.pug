@@ -1,5 +1,5 @@
 mixin section-article(title,paragraphs)
-   article.section__article
-      h3.section__subtitle= title
+   article(class="section__article")
+      h3(class="section__subtitle")= title
       each paragraph in paragraphs
-         p.section__paragraph= paragraph
+         p(class="section__paragraph")= paragraph

@@ -1,0 +1,60 @@
+.header {
+  border-bottom-left-radius: 100px;
+  padding-left: px-to-measure(25px);
+  padding-right: px-to-measure(25px);
+
+  color: var(--white);
+
+  background-color: rgb(255, 61, 84);
+
+  background-image: url(../assets/img/bg-pattern-intro.svg),
+    linear-gradient(
+      185deg,
+      rgba(255, 61, 84, 1) 0%,
+      rgba(255, 143, 112, 1) 100%
+    );
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .btn {
+    display: inline-block;
+
+    padding: px-to-measure(12px) px-to-measure(24px);
+    border-radius: px-to-measure(34px);
+
+    font-weight: bold;
+  }
+
+  @import './menu';
+  @import './submenu';
+
+  &__home {
+    margin-bottom: px-to-measure(100px);
+  }
+  &__text {
+    padding-left: px-to-measure(12px);
+    padding-right: px-to-measure(12px);
+    margin-top: px-to-measure(60px);
+    margin-bottom: px-to-measure(30px);
+  }
+
+  &__paragraph {
+    color: var(--bg);
+  }
+
+  &__btns {
+    width: 100%;
+    padding-bottom: px-to-measure(150px);
+  }
+  &__btn-white {
+    color: var(--primary-desktop);
+    background-color: var(--white);
+    margin-right: 12px;
+  }
+
+  &__btn-red {
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+  }
+}

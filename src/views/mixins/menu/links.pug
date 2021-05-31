@@ -1,6 +1,9 @@
 include ./submenu
 mixin links(title,subLinks)
    li.menu__item
-      a.menu__link(href="#")= title
-         img(src=require('../../assets/img/icon-arrow-dark.svg'))
-      +submenu(subLinks)
+      if(subLinks)
+         a.menu__link(data-menu=title)= title
+      else
+         a.menu__link(href="#",data-menu=title)= title
+
+      +submenu(subLinks,title)

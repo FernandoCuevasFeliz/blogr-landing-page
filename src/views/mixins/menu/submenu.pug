@@ -1,5 +1,5 @@
-mixin submenu(links)
-   ul.submenu
+mixin submenu(links,title)
+   ul.submenu(data-menu=title)
       each link in links
-         li.menu__item
+         li(class="menu__item")
             a.menu__link(href="#")= link
